@@ -1,13 +1,189 @@
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+:root {
+  --primary: #E5AF37;
+  --bg: #010101;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+.mySlides {
+  display:contents;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo { 
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none; 
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 50%;
+  max-width: 75%;
   position: relative;
   margin: auto;
+}
+
+/* About Section */
+.about img {
+  border-radius: 15%;
+  width: 200px;
+  height: 200px;
+}
+
+.about, .menu, .model, .contact {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2, .menu h2, .model h2, .contact h2{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about h2 span, .menu h2 span, .model h2 span, .contact h2 span {
+  color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+  border-radius: 20%;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 2rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+/* Menu Section */
+.menu-card img {
+  height: 250px;
+  width: 250px;
+}
+
+.menu h2, .model h2, .contact h2 {
+  text-align: left;
+}
+
+.menu p, .model p, .contact p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.menu .row , .model .row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.menu .row .menu-card img {
+  width: 100%;
+  padding-right: 3rem;
+}
+
+.menu .row .menu-card .menu-card-title {
+  margin: 0.5rem 1rem 0.5rem ;
 }
 
 /* Next & previous buttons */
@@ -37,31 +213,11 @@ img {vertical-align: middle;}
   background-color: rgba(148, 132, 132, 0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
