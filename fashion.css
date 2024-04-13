@@ -165,11 +165,19 @@ body {
   line-height: 1.6;
 }
 
-.menu .row , .model .row{
+.menu .row {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1rem;
   justify-content: center;
+}
+
+.model .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: center;
+  
 }
 
 .menu .row .menu-card {
@@ -182,8 +190,59 @@ body {
   padding-right: 3rem;
 }
 
-.menu .row .menu-card .menu-card-title {
-  margin: 0.5rem 1rem 0.5rem ;
+/* Model Section */
+.model-card img {
+  height: 300px;
+}
+
+.model .row .model-card {
+  padding-bottom: 4rem;
+  margin: 2rem ;
+}
+
+.model .row .model-card img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer .social {
+  padding: 1rem 0;
+}
+
+footer .social a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .social a:hover, footer .links a:hover {
+  color: var(--bg);
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+} 
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
 }
 
 /* Next & previous buttons */
@@ -243,4 +302,97 @@ body {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+      font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+      font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+      display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: #fff;
+      width: 30rem;
+      height: 100vh;
+      transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+      right: 0;
+  }
+
+  .navbar .navbar-nav a {
+      color: var(--bg);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+      transform-origin: 0 0;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.2);
+  }
+
+
+  .about .row {
+      flex-wrap: wrap;
+  }
+
+  .about .row .about-img {
+      height: 24rem;
+      object-fit: cover;
+      object-position: center;
+  }
+
+  .about .row .content {
+      padding: 0;
+  }
+
+  .about .row .content h3 {
+      font-size: 1.6rem;
+  }
+
+
+  .menu p {
+      font-size: 1.2rem;
+  }
+
+  .contact .row {
+      flex-wrap: wrap;
+  }
+
+  .contact .row .map {
+      height: 30rem;
+  }
+
+  .contact .row form {
+      padding-top: 0;
+  }
+}
+
+/* Hp */
+@media (max-width: 450px) {
+  html {
+      font-size: 55%;
+  }
 }
