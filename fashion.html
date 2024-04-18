@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Fashion Website">
+    <meta name="author" content="Andreas Pujo Santoso & Haikal Algivari">
+
     <title>Queens</title>
 
     <!-- Fonts -->
@@ -21,16 +25,21 @@
   <body>
     <!-- Navbar star -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo">Queens</a>
+      <a href="#" class="navbar-logo">
+        <p style="color: rgb(229, 175, 55);">Queens</p>
+      </a>
 
       <div class="navbar-nav">
         <a href="#about">Tentang Kami</a>
         <a href="#produk">Produk</a>
+        <a href="#model">Lainnya</a>
+        <a href="#berita">Berita</a>
+
       </div>
 
       <div class="navbar-search">
         <a href="#" id="search"><i data-feather="search"></i></a>
-        <input type="text" placeholder="Cari...">
+        <input class="search-input" type="text" placeholder="Cari...">
       </div>
       <div class="navbar-hamburger">
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>        
@@ -67,10 +76,10 @@
     
     <div>  
       <a class="prev" onclick="plusSlides(-1)">
-    <img src="chevron-left.svg">
+    <img src="chevron-left (1).svg">
   </a>
   <a class="next" onclick="plusSlides(1)">
-    <img src ="chevron-right.svg">
+    <img src ="chevron-right (1).svg">
   </a>
 </div>
 </div>
@@ -87,14 +96,15 @@
 
 <!-- About Section start -->
 <section id="about" class="about">
-  <h2><span>Tentang</span> Kami</h2>
   
   <div class="row">
-  <div class="about-img">
-    <img src="img\logo (2).png" alt="Tentang Kami">
-  </div>
-  <div class="content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor.</p>
+    <div class="about-img">
+      <img src="img\logo (2).png" alt="Tentang Kami">
+    </div>
+    <div class="content">
+      <h2><span>Tentang</span> Kami</h2>
+      <p>Kami adalah brand yang terdaftar dalam katalog fashion, menawarkan berbagai pilihan mode untuk Anda. Dari baju yang elegan, celana yang nyaman, jam tangan yang mewah, tas yang modis, 
+      sepatu yang sempurna untuk setiap kesempatan, hingga sandal yang stylish. Di Queens, kami percaya bahwa setiap orang pantas tampil menawan.</p>
   </div>
 </section>
 
@@ -102,25 +112,25 @@
 
     <!-- Menu Section start -->
     <section id="produk" class="menu">
-      <h2><span>Produk</span> Kami</h2>
+      <h2><span>Produk</span> Populer</h2>
     
       <div class="row">
         <div class="menu-card">
-          <img src="img\10.jpg" alt="Baju" class="menu-card-img">
-          <h3 class="menu-card-title">Baju</h3>
+          <img src="img\7.jpg" alt="Baju" class="menu-card-img">
+          <h3 class="menu-card-title">Sneakers</h3>
         </div>
         <div class="menu-card">
-          <img src="img\10.jpg" alt="Baju" class="menu-card-img">
-          <h3 class="menu-card-title">Baju</h3>
+          <img src="img\8.jpg" alt="Baju" class="menu-card-img">
+          <h3 class="menu-card-title">Sneakers</h3>
         </div>
         <br>
         <div class="menu-card">
           <img src="img\9.jpg" alt="Baju" class="menu-card-img">
-          <h3 class="menu-card-title">Baju</h3>
+          <h3 class="menu-card-title">Tas Tote Bag</h3>
         </div>
         <div class="menu-card">
           <img src="img\10.jpg" alt="Baju" class="menu-card-img">
-          <h3 class="menu-card-title">Baju</h3>
+          <h3 class="menu-card-title">Tas Sling Bag</h3>
         </div>
       </div>
     </section>
@@ -129,37 +139,47 @@
 
     <!-- Produk Section start -->
     <section id="model" class="model">
-      <h2><span>Model</span> Produk</h2>
+      <h2><span>Produk</span> Lainnya</h2>
       <div class="row">
         <div class="model-card">
-          <img src="img\20.jpg" alt="Baju" class="model-card-img">
+          <img src="img\17.jpg" alt="Baju" class="model-card-img">
+          <h3 class="model-card-title">Chain Strap</h3>
         </div>
         <div class="model-card">
           <img src="img\20.jpg" alt="Baju" class="model-card-img">
+          <h3 class="model-card-title">Leather Strep</h3>
         </div>
         <div class="model-card">
-          <img src="img\20.jpg" alt="Baju" class="model-card-img">
+          <img src="img\11.jpg" alt="Baju" class="model-card-img">
+          <h3 class="model-card-title">Sandal Slip On</h3>
         </div>
         <div class="model-card">
-          <img src="img\20.jpg" alt="Baju" class="model-card-img">
+          <img src="img\12.jpg" alt="Baju" class="model-card-img">
+          <h3 class="model-card-title">Sandal Sling Casual</h3>
         </div>
         <div class="model-card">
-          <img src="img\20.jpg" alt="Baju" class="model-card-img">
+          <img src="img\15.jpg" alt="Baju" class="model-card-img">
+          <h3 class="model-card-title">Tunik Kasual</h3>
         </div>
         <div class="model-card">
-          <img src="img\20.jpg" alt="Baju" class="model-card-img">
+          <img src="img\16.jpg" alt="Baju" class="model-card-img">
+          <h3 class="model-card-title">Tunik Motif</h3>
         </div>
         <div class="model-card">
-          <img src="img\20.jpg" alt="Baju" class="model-card-img">
+          <img src="img\13.jpg" alt="Baju" class="model-card-img">
+          <h3 class="model-card-title">Celana Midi Kulo</h3>
         </div>
         <div class="model-card">
-          <img src="img\20.jpg" alt="Baju" class="model-card-img">
+          <img src="img\14.jpg" alt="Baju" class="model-card-img">
+          <h3 class="model-card-title">Celana Kulot</h3>
         </div>
         <div class="model-card">
-          <img src="img\20.jpg" alt="Baju" class="model-card-img">
+          <img src="img\21.jpg" alt="Baju" class="model-card-img">
+          <h3 class="model-card-title">Kaos Basic</h3>
         </div>
         <div class="model-card">
-          <img src="img\20.jpg" alt="Baju" class="model-card-img">
+          <img src="img\22.jpg" alt="Baju" class="model-card-img">
+          <h3 class="model-card-title">Kaos Basic</h3>
         </div>
       </div>
     </section>
@@ -169,14 +189,16 @@
    <!-- Footer start -->
    <footer>
     <div class="social">
-      <a href="https://www.instagram.com/noesantara.project/"><i data-feather="instagram"></i></a>
-      <a href="https://www.instagram.com/noesantara.project/"><i data-feather="twitter"></i></a>
-      <a href="https://www.instagram.com/noesantara.project/"><i data-feather="facebook"></i></a>
+      <a href="https://www.instagram.com/elizabeth_ez/"><i data-feather="instagram"></i></a>
+      <a href="https://www.instagram.com/elizabeth_ez/"><i data-feather="twitter"></i></a>
+      <a href="https://www.instagram.com/elizabeth_ez/"><i data-feather="facebook"></i></a>
     </div>
 
     <div class="links">
       <a href="#about">Tentang Kami</a>
       <a href="#produk">Produk</a>
+      <a href="#model">Lainnya</a>
+      <a href="#berita">Berita</a>
     </div>
 
     <div class="credit">
