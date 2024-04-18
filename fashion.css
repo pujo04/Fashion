@@ -1,5 +1,5 @@
 :root {
-  --primary: #E5AF37;
+  --primary: rgb(229, 175, 55);
   --bg: #010101;
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 .mySlides {
-  display:contents;
+  display: contents;
 }
 
 /* Navbar */
@@ -95,7 +95,7 @@ body {
   transition-duration: 0.2s;
 }
 
-.navbar-search input{
+.navbar-search .search-input{
   font-size: 1.3rem;
   border: none;
   outline: none;
@@ -116,11 +116,12 @@ body {
 }
 
 #hamburger-menu {
-  display: none; 
+  display: none;
 }
 
 /* Slideshow container */
 .slideshow-container {
+  padding-top: 8rem;
   max-width: 75%;
   position: relative;
   margin: auto;
@@ -129,16 +130,15 @@ body {
 /* About Section */
 .about img {
   border-radius: 15%;
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175px;
 }
 
 .about, .menu, .model, .contact {
-  padding: 8rem 7% 1.4rem;
+  padding: 4rem 7% 1rem;
 }
 
 .about h2, .menu h2, .model h2, .contact h2{
-  text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -156,7 +156,6 @@ body {
 }
 
 .about .row .about-img img {
-  width: 100%;
   border-radius: 20%;
 }
 
@@ -175,6 +174,7 @@ body {
   font-size: 1.3rem;
   font-weight: 100;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* Menu Section */
@@ -207,17 +207,18 @@ body {
   flex-wrap: wrap;
   margin-top: 1rem;
   justify-content: center;
-  
 }
 
 .menu .row .menu-card {
   text-align: left;
   padding-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 .menu .row .menu-card img {
   width: 100%;
   padding-right: 3rem;
+  margin-top: 2rem;
 }
 
 /* Model Section */
