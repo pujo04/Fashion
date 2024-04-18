@@ -16,6 +16,12 @@ document.addEventListener("click", function (e) {
   }
 });
 
+// Menu profil
+let subMenu = document.getElementById("subMenu");
+function toggleMenu() {
+  subMenu.classList.toggle("open-menu");
+}
+
 /* Slidebar */ 
 let slideIndex = 1;
 showSlides(slideIndex);
