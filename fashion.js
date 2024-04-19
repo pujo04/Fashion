@@ -16,11 +16,29 @@ document.addEventListener("click", function (e) {
   }
 });
 
-// Menu profil
-let subMenu = document.getElementById("subMenu");
-function toggleMenu() {
-  subMenu.classList.toggle("open-menu");
-}
+// Kolom Search
+const searchInput = document.querySelector(".navbar-search");
+document.querySelector(".search-input").onclick=()=>{
+  searchInput.classList.toggle("active");
+};
+document.addEventListener("click", function (e) {
+  if (!searchInput.contains(e.target)) {
+    searchInput.classList.remove("active");
+  };
+});
+
+// Menu Profil
+const subMenu = document.getElementById("subMenu");
+const avatar = document.querySelector(".avatar");
+const sub_menu = document.querySelector(".sub-menu");
+avatar.onclick=()=>{
+  subMenu.classList.toggle("active");
+};
+document.addEventListener("click", function (e) {
+  if (!avatar.contains(e.target) && !sub_menu.contains(e.target)) {
+    subMenu.classList.remove("active");
+  };
+});
 
 /* Slidebar */ 
 let slideIndex = 1;
